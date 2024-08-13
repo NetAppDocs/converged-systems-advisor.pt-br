@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: reference_user_roles.html 
+keywords: read only, write, owner, privileges, access, security, roles 
+summary: Ao compartilhar uma infraestrutura convergente com outro usuário, você pode fornecer Privileges somente leitura, gravação ou proprietário. 
+---
+= Funções de utilizador
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Ao compartilhar uma infraestrutura convergente com outro usuário, você precisa fornecer Privileges somente leitura, gravação ou proprietário.
+
+A tabela a seguir identifica as tarefas que cada função de usuário pode executar.
+
+[cols="25,25,25,25"]
+|===
+| Tarefa | Somente leitura | Escreva | Proprietário 
+
+
+| Ver um sistema | Sim | Sim | Sim 
+
+
+| Atualize o nome de um sistema | Não | Sim | Sim 
+
+
+| Atualizar detalhes do contrato de suporte | Não | Sim | Sim 
+
+
+| Edite o intervalo de coleta de dados | Não | Sim | Sim 
+
+
+| Solicite uma nova coleta de dados | Não | Sim | Sim 
+
+
+| Compartilhe um sistema | Não | Sim, com acesso somente leitura ou gravação | Sim, com acesso somente leitura, escrita ou proprietário 
+
+
+| Modifique os componentes de um sistema | Não | Não | Sim 
+
+
+| Eliminar um sistema | Não | Não | Sim 
+|===

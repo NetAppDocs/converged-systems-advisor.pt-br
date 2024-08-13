@@ -1,0 +1,63 @@
+---
+sidebar: sidebar 
+permalink: task_setting_static_ip.html 
+keywords: networking, ip address, static, static ip, agent 
+summary: Se o seu ambiente não tiver um servidor DHCP, você poderá definir um endereço IP estático no agente Converged Systems Advisor. 
+---
+= Defina um endereço IP estático no agente
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Se o seu ambiente não tiver um servidor DHCP, você poderá definir um endereço IP estático no agente Converged Systems Advisor.
+
+.Passos
+. Faça login no console da máquina virtual do agente usando o cliente VMware vSphere.
++
+O nome de usuário padrão é *CSA* e a senha padrão é *NetApp*. Altere a senha, se solicitado.
+
+. Digite `sudo su –` no prompt do csa para se tornar root.
+. Introduza `# systemctl stop csa.service` para parar o serviço CSA.
+. Introduza o seguinte para determinar o nome correto do ficheiro de interface.
++
+Neste exemplo, o nome do arquivo de interface é `eth0`.
+
++
+`# ls /etc/network/interfaces.d/`
+
+. Entre `# /sbin/ifdown eth0` para parar a interface ativa.
+. Edite o arquivo /etc/network/interfaces.d/eth0 com o editor de sua escolha.
++
+`# nano /etc/network/interfaces.d/eth0` ou
+`# vi /etc/network/interfaces.d/eth0`
+
++
+O ficheiro contém o seguinte:
+
++
+`allow-hotplug eth0`
+`iface eth0 inet dhcp`
+
+. Remova `iface eth0 inet dhcp` e adicione o seguinte. OBSERVAÇÃO: Você deve substituir os valores corretos para todas as entradas que seguem os nomes dos campos no exemplo abaixo. Por exemplo, `192.168.11.1` é o valor para o gateway no exemplo. No entanto, em vez `192.168.11.1` de , você deve inserir o endereço correto para o gateway.
++
+`iface eth0 inet static`
+`address 192.168.11.100`
+`netmask 255.255.255.0`
+`gateway 192.168.11.1`
+`dns-domain example.com`
+`dns-nameservers 192.168.11.1`
+
+. Salve o arquivo.
++
+Em nano, você digita *ctrl o* seguido de *ctrl x* para salvar.
+
+. Introduza `vi/etc/resolv.conf` para abrir o ficheiro de configuração.
+. Adicione `nameserver <ip_address>` à parte superior do ficheiro.
+. Enter `# ifup eth0` para iniciar a interface de rede.
+. Entre `systemctl start csa.service` para reiniciar o Converged Systems Advisor.
+

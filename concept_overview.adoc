@@ -1,0 +1,22 @@
+---
+sidebar: sidebar 
+permalink: concept_overview.html 
+keywords: converged systems advisor, netapp, overview, concepts, features, use case, video, value 
+summary: O consultor de sistemas convergentes valida a implantação de sua infraestrutura FlexPod e fornece monitoramento e notificações contínuos para garantir a continuidade dos negócios. 
+---
+= Visão geral do Converged Systems Advisor
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+O consultor de sistemas convergentes valida a implantação de sua infraestrutura FlexPod e fornece monitoramento e notificações contínuos para garantir a continuidade dos negócios.
+
+Assista ao vídeo a seguir para uma visão geral do Converged Systems Advisor:
+
+video::CZHu0Xp33BY[youtube,width=848,height=480]
+Para obter mais detalhes sobre o valor que o Converged Systems Advisor fornece, https://www.netapp.com/data-storage/flexpod/cooperative-support/["leia a folha de dados"^].

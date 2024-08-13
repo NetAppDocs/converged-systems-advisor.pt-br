@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: reference_new.html 
+keywords: 'new, features, what"s new, enhancements, release notes' 
+summary: O NetApp atualiza periodicamente o consultor de sistemas convergentes para oferecer novos recursos, aprimoramentos e correções de bugs. 
+---
+= Novidades no Converged Systems Advisor
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+O NetApp atualiza periodicamente o consultor de sistemas convergentes para oferecer novos recursos, aprimoramentos e correções de bugs.
+
+Para confirmar que os componentes do FlexPod são suportados pelo agente CSA, consulte o http://mysupport.netapp.com/matrix["Ferramenta de Matriz de interoperabilidade do NetApp"^] (IMT).
+
+
+
+== 31 de julho de 2020
+
+A versão inclui os seguintes aprimoramentos:
+
+* <<Nova funcionalidade para deteção de mudança de armazenamento (diffs)>>
+* <<Garantia de configuração expandida para switches de interconexão de cluster>>
+* <<Cobertura inicial de designs NVMe>>
+
+
+
+
+== Nova funcionalidade para deteção de mudança de armazenamento (diffs)
+
+Agora você pode detetar alterações que ocorreram no sistema de storage. Para verificar se há alterações, nas páginas *Inventário de armazenamento*, clique em *Exibir diferença de configuração*. Em seguida, selecione um tempo e dados de configuração anteriores, que serão comparados com a configuração de armazenamento mais recente. Quaisquer alterações que tenham ocorrido serão destacadas para revisão rápida.
+
+
+
+== Garantia de configuração expandida para switches de interconexão de cluster
+
+No portal do consultor de sistemas convergentes, as verificações de garantia de configuração foram expandidas para monitorar a capacidade de suporte da comutação de interconexão de cluster ONTAP para os seguintes modelos:
+
+* Cisco Nexus 3132Q-V
+* Cisco Nexus 3232C
+* Cisco Nexus 92300YC
+
+
+
+
+== Cobertura inicial de designs NVMe
+
+Foram adicionadas verificações iniciais de garantia de configuração para monitorar a capacidade de compatibilidade de designs de storage do NVMe ONTAP no FlexPod.

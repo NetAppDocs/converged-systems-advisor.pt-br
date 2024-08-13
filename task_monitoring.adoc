@@ -1,0 +1,202 @@
+---
+sidebar: sidebar 
+permalink: task_monitoring.html 
+keywords: reports, alerts, history, support contract, contracts, rules, fail, warning, pass, notifications, email 
+summary: Você pode monitorar sua infraestrutura convergente respondendo a alertas, analisando um histórico de alterações e gerando relatórios que fornecem uma visão holística de uma infraestrutura. 
+---
+= Monitoramento da infraestrutura convergente
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Você pode monitorar sua infraestrutura convergente respondendo a alertas, analisando um histórico de alterações e gerando relatórios que fornecem uma visão holística de uma infraestrutura.
+
+
+
+== Revisão de alertas para regras e avisos com falha
+
+O Converged Systems Advisor monitora continuamente sua infraestrutura e gera avisos e falhas para garantir que o sistema esteja configurado e executando de acordo com as práticas recomendadas.
+
+.Passos
+. Faça login no https://csa.netapp.com/["Portal do Converged Systems Advisor"^] e clique em *regras*.
++
+A página regras exibe um resumo de todas as regras. O status de cada regra é *Pass*, *Warning* ou *Fail*.
+
+. Clique no ícone de filtro na coluna Status e selecione *Fail*, *Warning* ou ambos.
++
+image:screenshot_rules_filter.gif["Mostra o ícone de filtro que permite filtrar a tabela para que ela mostre apenas as regras que passaram, falharam ou incluem avisos."]
+
+. Revise os detalhes sobre regras individuais clicando na seta ao lado da coluna Status.
++
+image:screenshot_rules_information.gif["Mostra detalhes sobre uma regra, incluindo a descrição, o impactos e a resolução."]
+
+. Siga as instruções na resolução para corrigir o problema.
++
+Se necessário, <<Rever o histórico de uma infraestrutura,reveja o histórico de configuração>> para que a infraestrutura o ajude a resolver o problema.
+
+
+
+.Depois de terminar
+O status das regras que você endereçou deve ser exibido como passe após o próximo período de coleta do agente.
+
+
+
+== Correção de regras com falha
+
+O Converged Systems Advisor pode resolver algumas regras com falha para você corrigindo o problema subjacente à infraestrutura convergente.
+
+.Sobre esta tarefa
+* Você deve ter a licença Premium.
+* Você precisa ser atribuído como proprietário da infraestrutura convergente.
+
+
+.Passos
+. Faça login no https://csa.netapp.com/["Portal do Converged Systems Advisor"^] e clique em *regras*.
++
+A página regras exibe um resumo de todas as regras. O status de cada regra é *Pass*, *Warning* ou *Fail*.
+
+. Selecione *regras de filtro que podem ser corrigidas*.
+. Expanda a regra que você deseja resolver.
+. Clique image:wrench_icon.jpg["Mostra o ícone de chave inglesa que permite corrigir automaticamente as regras falhadas."] no canto superior direito da regra expandida.
++
+Se o ícone estiver desativado, é porque o agente está offline, você não tem o Privileges do proprietário ou porque não tem uma licença Premium.
+
+. Se necessário, preencha os valores de entrada.
++
+Dependendo da regra com falha, alguns valores de entrada são necessários para resolver o problema.
+
+. Se você quiser que uma coleta de dados seja feita após a conclusão bem-sucedida da correção, selecione a opção *coletar quando o trabalho de correção for concluído*.
+. Clique em *Executar remediação*.
+. Clique em *Confirm*.
+. Para ver as ações que estão sendo tomadas para resolver regras com falha, clique no ícone *operações* e selecione *Ação de remediação*.
++
+image:operations_icon.gif["Mostra o ícone de operações que abre o menu para ver as ações corretivas."]
+
+
+
+
+
+== Suprimir regras falhadas
+
+O Converged Systems Advisor permite suprimir regras para que não apareçam no painel e não envie mais notificações por e-mail em caso de falha de regra.
+
+Por exemplo, ativar telnet não é recomendado, mas se preferir ativá-lo, você pode suprimir a regra.
+
+.Sobre esta tarefa
+Você deve ter a licença Premium para configurar notificações.
+
+.Passos
+. No Painel, clique em *regras*.
+. Encontre as regras que você está procurando filtrando o conteúdo da tabela.
+. Selecione uma ou mais linhas para regras que tenham o status de Aviso ou Falha e clique no ícone *Alertas*.
++
+image:screenshot_rules_suppress.gif["Mostra o ícone de alertas acima da tabela que permite suprimir regras."]
+
+. Selecione uma duração e clique em *Enviar*.
+
+
+
+TIP: Se quiser ativar os alertas, siga estes mesmos passos e selecione *Terminar supressão*.
+
+.Resultado
+O Converged Systems Advisor não o notifica mais sobre a regra pela duração especificada e a regra não será mais visível no painel.
+
+
+
+== Exibindo regras suprimidas
+
+Você pode exibir a lista de regras que foram suprimidas e, se desejado, selecionar para terminar a supressão.
+
+.Passos
+. Clique no ícone *Configurações* e selecione *regras suprimidas*.
++
+image:screenshot_suppressed_rules.gif["Mostra o ícone de configurações que abre o menu para selecionar regras suprimidas."]
+
+. Selecione as regras suprimidas que você deseja começar a exibir.
+. Clique no ícone *Alertas*.
++
+image:screenshot_rules_suppress.gif["Mostra o ícone de alertas acima da tabela que permite suprimir regras."]
+
+. Selecione *Terminar supressão* e clique em *Enviar*.
+
+
+.Resultado
+Os alertas são ativados para a regra selecionada e a regra é exibida na tabela regras e no painel.
+
+
+
+== Rever o histórico de uma infraestrutura
+
+Quando você recebe um alerta sobre uma regra com falha, você pode exibir um histórico do que mudou na configuração para ajudá-lo a resolver o problema.
+
+.Passos
+. Selecione uma infraestrutura convergente.
+. Clique em *mais > Histórico*.
++
+image:screenshot_history_navigation.gif["Mostra o menu mais que inclui a opção de histórico."]
+
+. Clique em um dia no calendário para ver o número de avisos e falhas que foram identificados durante cada coleta de dados.
++
+
+TIP: O número exibido para cada dia corresponde ao número de vezes que o agente coletou dados. Por exemplo, se você mantiver o intervalo de coleta padrão de 24 horas, verá uma coleção por dia.
+
++
+A imagem a seguir mostra uma única coleção no dia 27th do mês.
+
++
+image:screenshot_history_status.gif["Mostra o número um e um ponto amarelo no dia 27th do mês."]
+
+. Para ver mais detalhes sobre os dados coletados, clique em *ir para o painel de IC* para uma coleção.
+. Se necessário, veja o histórico pela última vez que não foram identificados avisos ou falhas.
++
+Comparar os dados entre os dois períodos de coleta pode ajudá-lo a identificar o que mudou.
+
+
+
+
+
+== Gerando relatórios
+
+Se você tiver uma licença Premium, poderá gerar vários tipos de relatórios que fornecem detalhes sobre o status atual da sua infraestrutura convergente: Um relatório de inventário, um relatório de integridade, um relatório de avaliação e muito mais.
+
+.Passos
+. Clique em *relatórios*.
+. Selecione um relatório e clique em *Generate*.
+. Escolha suas opções para o relatório:
++
+.. Selecione uma infraestrutura convergente.
+.. Opcionalmente, mude da coleta de dados mais recente para uma anterior.
+.. Escolha como deseja exibir o relatório: No seu navegador, como um PDF baixado ou por e-mail.
++
+image:screenshot_reports_generate.gif["Mostra as opções para gerar um relatório, que inclui a seleção de uma infraestrutura convergente e um snapshot e, em seguida, escolher como você deseja exibi-lo."]
+
+
+
+
+
+.Resultado
+O Converged Systems Advisor gera o relatório.
+
+
+
+== Acompanhamento de contratos de suporte
+
+Você pode adicionar detalhes sobre contratos de suporte para cada dispositivo em uma configuração: A data de início, a data de término e a ID do contrato. Isso permite que você acompanhe facilmente os detalhes em um local central para saber quando renovar contratos de suporte para cada dispositivo.
+
+.Passos
+. Clique em *Selecione um IC* e selecione a infraestrutura convergente.
+. No widget Contrato de suporte, clique no ícone *Editar contrato*.
+. Selecione *Data de início* e *Data de fim* e insira o *ID do contrato*.
+. Clique em *Enviar*.
+. Repita as etapas para cada dispositivo na configuração.
+
+
+.Resultado
+O Converged Systems Advisor agora exibe os detalhes do contrato de suporte para cada dispositivo. Você pode ver facilmente quais dispositivos têm contratos de suporte ativos e expirados.
+
+image:screenshot_support_contracts.gif["Mostra quatro contratos de suporte: Um expirou e os outros três estão ativos."]

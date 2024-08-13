@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: task_review_infrastructure_history.html 
+keywords: review, history, converged, infrastructure, configuration, resolve, issue, warnings, failures, collected, collections, data 
+summary: Quando você recebe um alerta sobre uma regra com falha, você pode exibir um histórico do que mudou na configuração para ajudá-lo a resolver o problema. 
+---
+= Revise o histórico de uma infraestrutura
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Quando você recebe um alerta sobre uma regra com falha, você pode exibir um histórico do que mudou na configuração para ajudá-lo a resolver o problema.
+
+.Passos
+. Selecione uma infraestrutura convergente.
+. Clique em *mais > Histórico*.
++
+image:screenshot_history_navigation.gif["Mostra o menu mais que inclui a opção de histórico."]
+
+. Clique em um dia no calendário para ver o número de avisos e falhas que foram identificados durante cada coleta de dados.
++
+
+TIP: O número exibido para cada dia corresponde ao número de vezes que o agente coletou dados. Por exemplo, se você mantiver o intervalo de coleta padrão de 24 horas, verá uma coleção por dia.
+
++
+A imagem a seguir mostra uma única coleção no dia 27th do mês.
+
++
+image:screenshot_history_status.gif["Mostra o número um e um ponto amarelo no dia 27th do mês."]
+
+. Para ver mais detalhes sobre os dados coletados, clique em *ir para o painel de IC* para uma coleção.
+. Se necessário, veja o histórico pela última vez que não foram identificados avisos ou falhas.
++
+Comparar os dados entre os dois períodos de coleta pode ajudá-lo a identificar o que mudou.
+
+

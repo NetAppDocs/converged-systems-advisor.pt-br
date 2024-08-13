@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: reference_issues.html 
+keywords: new, features, bugs, known issues, limitations, known limitations, supported, unsupported, release notes 
+summary: Problemas conhecidos identificam problemas que podem impedi-lo de usar o serviço com sucesso. Se um relatório Bugs Online estiver disponível, o ID do bug contém um hiperlink para o relatório. 
+---
+= Problemas conhecidos
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Problemas conhecidos identificam problemas que podem impedi-lo de usar o serviço com sucesso. Se um relatório Bugs Online estiver disponível, o ID do bug contém um hiperlink para o relatório.
+
+[cols="12,53"]
+|===
+| ID do bug | Descrição 
+
+
+| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1234597["1234597"^] | O Converged Systems Advisor não corrige a configuração de DNS para mais de quatro SVMs. 
+
+
+| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1234603["1234603"^] | Depois de criar vários trabalhos de remediação com a coleta ativada, a coleta é acionada apenas para o primeiro trabalho de remediação. 
+
+
+| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1335590["1335590"^] | A regra da CA "Storage failover State" (Estado de failover de storage) foi removida do Converged Systems Advisor. 
+
+
+| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1335593["1335593"^] | Os números de versão dos switches Nexus e MDS são mostrados incorretamente em "Upgrade Advisor". 
+|===

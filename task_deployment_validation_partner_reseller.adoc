@@ -1,0 +1,55 @@
+---
+sidebar: sidebar 
+permalink: task_deployment_validation_partners_resellers.html 
+keywords: review, alerts, warnings, failed, rules, alerts, history, remediate, remediation, suppress, display, fail, warning, pass, notifications, email 
+summary: Como parceiro ou revendedor, você pode validar a implantação da infraestrutura de um cliente. 
+---
+= Valide a implantação para parceiros e revendedores
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Como parceiro ou revendedor, você pode validar a implantação da infraestrutura do cliente revisando os dados exibidos no painel ou gerando um relatório de integridade.
+
+.Antes de começar
+* Você instalou um novo FlexPod no local do cliente ou está trabalhando com um FlexPod existente.
+* Você criou contas em dispositivos FlexPod.
+* Se você estiver usando um servidor TACACS, você concedeu ao usuário CSA Privileges.
+* Você baixou e instalou o agente.
++
+link:task_setup_deploy_agent.html["Configure e implante o agente"]Consulte a .
+
+* Você configura a rede para o agente e, opcionalmente, instalou um certificado SSL no agente.
+* Com suas credenciais do NetApp, você criou o IC para que seu cliente adicione a infraestrutura ao portal.
++
+link:task_add_infrastructure["Adicione infraestrutura ao portal"]Consulte para criar um IC no portal CSA.
+
+* Opcionalmente, você compartilhou a infraestrutura com outros usuários.
+
+
+.Passos
+Os parceiros e revendedores usam suas próprias credenciais NetApp para fazer login no portal do CSA para iniciar o processo de validação.
+
+. Inicie sessão no https://csa.netapp.com/["Portal do Converged Systems Advisor"^] utilizando as suas credenciais NetApp.
+. Clique em *Selecione um IC* e, em seguida, clique no IC apropriado para o cliente ou digite o nome do IC na caixa de pesquisa. O painel do IC é exibido.
+
+
+Como parceiro ou revendedor, você pode validar a infraestrutura do cliente usando os seguintes métodos:
+
+* No Dashboard, é possível validar vários aspectos da infraestrutura:
++
+** *Interoperabilidade do firmware* exibe as versões de software instaladas. Clique em cada cabeçalho para ver detalhes adicionais.
+** *Contrato de suporte* mostra quando os contratos expiram. Clique em *Exibir detalhes* para obter informações adicionais.
+** *Status do agente* exibe detalhes sobre o agente, incluindo os dispositivos que estão sendo monitorados.
+** *Capacity* mostra a utilização de espaço em disco, portas de rede e chassis blade UCS. Clique nos links para exibir detalhes de cada utilização.
+** *Saúde* exibe graficamente o status das regras para os recursos de armazenamento, computação, rede e virtualização da infraestrutura. Clique nas áreas de cor dos gráficos para ver detalhes adicionais.
+** *Resumo das regras* mostra alertas para regras e avisos com falha. Clique nas setas à esquerda de cada linha ou clique no nome do dispositivo para ver detalhes adicionais.
+
+
+* Na barra de ação, selecione *relatórios->Relatório de integridade* para gerar um Relatório de integridade do sistema convergente detalhado. Você pode visualizá-lo no navegador, baixá-lo como um arquivo PDF ou compartilhá-lo por e-mail.
+

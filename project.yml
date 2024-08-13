@@ -1,0 +1,68 @@
+---
+settings:
+  name: Converged Systems Advisor
+  rss_page: reference_new.html
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: pt-br,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr,it-it
+sidebar:
+  entries:
+  - title: Documentos do Converged Systems Advisor
+    url: "/index.html"
+  - title: Notas de lançamento
+    entries:
+    - title: O que há de novo
+      url: "/reference_new.html"
+    - title: O que há de novo arquivo
+      url: "/reference_archive.html"
+    - title: Problemas conhecidos
+      url: "/reference_issues.html"
+  - title: Conceitos
+    entries:
+    - title: Visão geral
+      url: "/concept_overview.html"
+    - title: Arquitetura
+      url: "/concept_architecture.html"
+    - title: Licenciamento
+      url: "/concept_licensing.html"
+    - title: Segurança
+      url: "/concept_security.html"
+    - title: Funções de utilizador
+      url: "/reference_user_roles.html"
+  - title: Como começar
+    entries:
+    - title: Início rápido
+      url: "/task_quick_start.html"
+    - title: Prepare seu ambiente
+      url: "/task_prepare_environment.html"
+    - title: Criar contas para dispositivos FlexPod
+      url: "/task_create_accounts_flexpod_devices.html"
+    - title: Configure e implante o agente
+      url: "/task_setup_deploy_agent.html"
+    - title: Adicione infraestrutura no portal
+      url: "/task_add_infrastructure.html"
+    - title: Configurar notificações
+      url: "/task_configure_notifications.html"
+    - title: Defina um IP estático no agente
+      url: "/task_setting_static_ip.html"
+  - title: Monitoramento de sua infraestrutura
+    entries:
+    - title: Revise o histórico da infraestrutura
+      url: "/task_review_infrastructure_history.html"
+    - title: Monitorar regras
+      url: "/task_monitor_rules.html"
+    - title: Gerar relatórios
+      url: "/task_generate_reports.html"
+    - title: Acompanhe os contratos de suporte
+      url: "/task_track_contracts.html"
+  - title: Valide a implantação para parceiros e revendedores
+    url: "/task_deployment_validation_partners_resellers.html"
+  - title: Solução de problemas
+    url: "/task_troubleshooting.html"
+  - title: Links relacionados
+    url: "/reference_additional_info.html"
+  - title: Avisos legais
+    url: "/reference_legal_notices.html"

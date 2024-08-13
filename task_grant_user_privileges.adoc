@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: task_grant_user_privileges.html 
+keywords: grant, user, privileges, TACACS+, server, group, command, commands, access, CSA, user, account 
+summary: Se você estiver usando um servidor TCACS e precisar conceder Privileges ao usuário do CSA para seus switches, você deve criar um grupo de privilégios de usuário e conceder ao grupo acesso aos comandos de configuração específicos necessários pelo CSA. 
+---
+= Conceda Privileges ao usuário do CSA usando um servidor TCACS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Se você estiver usando um servidor TCACS e precisar conceder Privileges ao usuário do CSA para seus switches, você deve criar um grupo de privilégios de usuário e conceder ao grupo acesso aos comandos de configuração específicos necessários pelo CSA. Os comandos a seguir devem ser gravados no arquivo de configuração do seu servidor TACACS.
+
+.Passos
+. Digite o seguinte para criar um grupo de privilégios de usuário com acesso somente leitura: Grupo_nome_grupo_nome_padrão_serviço_de_negação_de_serviço_0
+. Digite o seguinte para conceder acesso aos comandos necessários pelo agente de SC: Licença "ambiente" licença "versão" permissão "recurso" permissão "conjunto de recursos" permissão "conjunto de recursos" permissão "interface" permissão "interface" permissão "interface" permissão "transcetor de interface" mgmt0 permissão "inventário" permissão "licença" licença
+. Introduza o seguinte para adicionar a sua conta de utilizador CSA ao grupo recém-criado
+

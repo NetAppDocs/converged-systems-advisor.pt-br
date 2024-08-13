@@ -1,0 +1,74 @@
+---
+sidebar: sidebar 
+permalink: concept_licensing.html 
+keywords: licenses, standard, premium, features, licensing, alerts, notifications, emails, reports, term, subscription, reporting 
+summary: É necessária uma licença para desbloquear recursos no Converged Systems Advisor. Você pode escolher entre algumas opções de licenciamento para cada infraestrutura convergente do FlexPod. 
+---
+= Licenciamento
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+É necessária uma licença para desbloquear recursos no Converged Systems Advisor. Você pode escolher entre algumas opções de licenciamento para cada infraestrutura convergente do FlexPod.
+
+[cols="12,64,24"]
+|===
+| Licença | Caraterísticas | Termos 
+
+
+| Sem licença  a| 
+Versão limitada para demonstrar as capacidades do produto:
+
+* Monitoramento de configurações do FlexPod por um período de teste de 24 horas
+* Painéis de integridade para visualizar a conformidade com as práticas recomendadas da FlexPod
+* Inventário e remediação limitados (disponível em versões licenciadas)
+
+ a| 
+* Livre
+* Uso único (24 horas)
+
+
+
+
+| Padrão  a| 
+* Monitoramento contínuo de configurações do FlexPod
+* Painéis de integridade para visualizar a conformidade com as práticas recomendadas da FlexPod
+* Interoperabilidade de firmware para computação, rede, storage e hipervisor
+* Ferramentas de gerenciamento de ciclo de vida para identificar alterações e evitar desvios de configuração
+* Inventário detalhado e diagramas de sistema para solução de problemas avançada
+* Suporte fornecido diretamente pela NetApp
+
+ a| 
+Licença baseada em subscrição:
+
+* mínimo de 12 meses
+* máximo de 60 meses
+
+
+
+
+| Premium  a| 
+Todas as funcionalidades incluídas na licença Standard, além de:
+
+* Relatórios
++
+Relatórios abrangentes e em tempo real da integridade, interoperabilidade e inventário do FlexPod
+
+* Notificação e alerta
++
+Notificações regulares de integridade de configuração e alterações de status
+
+
+ a| 
+Licença baseada em subscrição:
+
+* mínimo de 12 meses
+* máximo de 60 meses
+
+
+|===

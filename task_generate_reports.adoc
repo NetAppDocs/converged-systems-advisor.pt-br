@@ -1,0 +1,35 @@
+---
+sidebar: sidebar 
+permalink: task_generate_reports.html 
+keywords: generate, report, reports, converged, infrastructure, health, inventory, assessment, deployment, validation, partners, issues, configured, configuration, interoperability, downloaded, PDF, email 
+summary: Você pode gerar vários tipos de relatórios, como um relatório de integridade ou um relatório de validação de implantação para parceiros. 
+---
+= Gerar relatórios
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Se você tiver uma licença Premium, poderá gerar vários tipos de relatórios que fornecem detalhes sobre o status atual da sua infraestrutura convergente: Um relatório de inventário, um relatório de integridade, um relatório de avaliação, um relatório de validação de implantação para parceiros e muito mais.
+
+.Passos
+. Clique em *relatórios*.
+. Selecione um relatório e clique em *Generate*.
+. Escolha suas opções para o relatório:
++
+.. Selecione uma infraestrutura convergente.
+.. Opcionalmente, mude da coleta de dados mais recente para uma anterior.
+.. Escolha como deseja exibir o relatório: No seu navegador, como um PDF baixado ou por e-mail.
++
+image:screenshot_reports_generate.gif["Mostra as opções para gerar um relatório, que inclui a seleção de uma infraestrutura convergente e um snapshot e, em seguida, escolher como você deseja exibi-lo."]
+
+
+
+
+
+.Resultado
+O Converged Systems Advisor gera o relatório.

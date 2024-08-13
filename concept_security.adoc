@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: concept_security.html 
+keywords: security, data, transfer, privacy, encrypted, encryption, https, tls, customer, business 
+summary: O consultor de sistemas convergentes coleta dados de configuração sobre a infraestrutura convergente do FlexPod para ajudar você a validar e monitorar o sistema. Você pode querer entender como os dados são coletados, como eles são transferidos para o NetApp e como eles são mantidos seguros e privados. 
+---
+= Segurança
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+O consultor de sistemas convergentes coleta dados de configuração sobre a infraestrutura convergente do FlexPod para ajudar você a validar e monitorar o sistema. Você pode querer entender como os dados são coletados, como eles são transferidos para o NetApp e como eles são mantidos seguros e privados.
+
+
+
+== Como os dados são coletados
+
+O agente do consultor de sistemas convergentes requer credenciais para acessar os dispositivos em sua infraestrutura convergente do FlexPod. Credenciais somente leitura são necessárias para switches Cisco UCS e Nexus, enquanto credenciais de administrador são necessárias para o ONTAP. As credenciais são criptografadas e armazenadas localmente no agente - elas não são enviadas para o portal baseado na nuvem.
+
+Depois de fornecer as credenciais, o agente coleta dados _Configuration_ dos dispositivos. _Cliente_ os dados que residem nos dispositivos nunca são acessados ou transferidos. Uma amostra representativa dos dados de configuração que o agente coleta inclui o seguinte:
+
+* Capacidade
+* CPU e memória
+* Conetividade do dispositivo
+* Nomes e IDs de dispositivos
+* Estado do dispositivo
+* Versões de firmware
+* Endereços IP
+* ISCSI Targets
+* Licenças
+* Endereços MAC
+* Números de modelo
+* Números de série
+
+
+
+
+== Como os dados são transferidos
+
+Depois que o agente descobrir os dados de configuração da sua infraestrutura convergente do FlexPod, ele envia os dados para o portal do consultor de sistemas convergentes usando HTTPS. A comunicação é criptografada usando o certificado TLS 1,2 da NetApp.
+
+image:diagram_data_transfer.gif["Mostra uma conexão HTTPS criptografada do agente para o portal."]
+
+
+
+== Como os dados são mantidos seguros e privados
+
+Os dados de configuração residem na rede NetApp e são gerenciados pelo NetApp IT. Os dados são protegidos por uma camada de acesso a dados que requer identificação positiva de cada usuário que solicita acesso.
+
+O usuário que implantou o agente pode acessar os dados do portal do consultor de sistemas convergentes fazendo login com uma conta do site de suporte da NetApp. Este usuário tem _owner_ Privileges para a infraestrutura convergente. O proprietário pode compartilhar a infraestrutura convergente com outros usuários concedendo Privileges somente leitura, gravação ou proprietário. Esses usuários também devem ter uma conta registrada do site de suporte da NetApp para fazer login no portal.
+
+link:reference_user_roles.html["Analise as diferenças entre somente leitura, escrita e proprietário Privileges"].
